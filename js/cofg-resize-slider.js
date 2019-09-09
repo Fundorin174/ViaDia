@@ -120,7 +120,7 @@ $(document).ready(function ()
           "url"      : "url(../img/DIA3.jpg)",
           "size"     : "cover",
           "repeat"   : "no-repeat",
-          "position" : "center center"
+          "position" : "center top"
         },
         "portrait":
         {
