@@ -32,7 +32,7 @@ body {
 
 
 .wrapper {
-  width: 75%;
+  width: 85%;
   align-content: center;
   margin: 0 auto;
 }
@@ -172,11 +172,14 @@ header {
 /* MAIN__SLIDER */
 #resizeSlider {
   z-index: 0;
+  max-height: 780px;
+  height: 780px;
 }
 
 
 .main_sliderText{
-  min-height: 100vh;
+  max-height: 780px;
+    height: 780px;
   width: 100%;
   position: relative;
   text-align: left;
@@ -190,21 +193,32 @@ header {
 
 }
 .main_sliderText .row1{
-  top: 45vh;
-  left:20%;
+  top: 37%;
+  left:10%;
   font-size: 28px;
+  font-weight: 500;
 }
 
 .main_sliderText .row2{
-  top: 50vh;
-  left:20%;
+  top: 40%;
+  left:10%;
   font-size: 50px;
+  text-transform: uppercase;
+  line-height: 50px;
+  font-weight: 700;
+
 }
 
 .main_sliderText .row3{
-  top: 55vh;
-  left:20%;
+  top: 43%;
+  left:10%;
   font-size: 18px;
+}
+
+.main_sliderText .row4{
+  top: 46%;
+  left:10%;
+  font-size: 12px;
 }
 
 
@@ -212,14 +226,45 @@ header {
 /* БЛОК О НАС */
 
 
-.main_about {
-  min-height: 100vh;
-  width: 100%;
+.main_about .wrapper{
+  /* max-height: 780px;
+    height: 780px; */
   position: relative;
   text-align: center;
   vertical-align: middle;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 60px 0;
 }
 
+.main_about_header{
+  max-width: 55%;
+}
+
+.main_about_header h6{
+  color:#7f7f7f;
+  text-transform: uppercase;
+  font-size: 0.8em;
+    font-weight: 400;
+
+    letter-spacing: 2.4px;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 2.2px;
+}
+
+.main_about_items{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 14px;;
+}
+
+.about_column{
+  margin: 40px 15px;
+}
 
 
 
@@ -361,7 +406,7 @@ footer a{
   #footer-button:hover {
     background-color: #4285f4;
     color: #fff;
-    background-color: #c4b31b;
+    background-color: #062a5e;
     transition: 0.5s;
   }
 
@@ -404,7 +449,7 @@ footer a{
 }
 
 .scrollup:hover{
-  background-color: #c4b31b;
+  background-color: #062a5e;
   transition: 0.5s;
 }
 
