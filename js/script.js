@@ -1,7 +1,6 @@
 'use strict';
 window.addEventListener('DOMContentLoaded', function () {
   let scrollBottom = document.querySelector('.scrollup');
-  console.log(scrollBottom);
   // appearing Menu on Scroll
   window.addEventListener('scroll', backgroundMenu, false);
 
@@ -39,8 +38,19 @@ window.addEventListener('DOMContentLoaded', function () {
   });
 
 
+// squre blocks
 
+function squreBlocks () {
+  let fotos = document.querySelectorAll('[data-lightbox="mygallery"]');
+      
 
+  fotos.forEach( function (item) {
+    let fotoWidth = item.clientWidth;
+    item.style.cssText = `height: ${fotoWidth}px;`; 
+  });
+}
+
+squreBlocks();
 
 
 });
