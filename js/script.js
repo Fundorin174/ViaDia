@@ -113,5 +113,57 @@ for (let i = 0; i < sliders.length + 1; i++) {
 
 
 
+// Modal
+
+let overlay = document.querySelector('.overlay'),
+close = document.querySelector('.popup-close');
+// more = document.querySelector('#btutton1'),
+
+
+// По клику на узнать больше появляется модальное окно с анимацией
+// more.addEventListener('click', function() {
+// overlay.style.display = 'block';
+// document.body.style.overflow = 'hidden'; //запрет проктутки при открытом модальном окне
+// });
+
+
+
+
+// Открыть Модальное при нажатии на любую кнопку
+let info = document.querySelector('.body-wrapper');
+
+info.addEventListener('click', (e) => {
+  let target = e.target;
+  if (target && target.classList.contains('description-btn')) {
+    overlay.style.display = 'block';
+    document.body.style.overflow = 'hidden'; //запрет проктутки при открытом модальном окне
+  }
+});
+
+
+// Закрыть модальное окно, разблокировать прокрутку
+close.addEventListener('click', () => {
+overlay.style.display = 'none';
+document.body.style.overflow = '';
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 });
