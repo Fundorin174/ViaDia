@@ -58,6 +58,7 @@ p {
 
 .body-wrapper {
   width: 100%;
+  display: -webkit-flex; 
   display: flex;
   flex-direction: column;
   /* align-items: center; */
@@ -107,6 +108,7 @@ header {
 }
 
 .menu-wrapper {
+  display: -webkit-flex; 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -145,6 +147,7 @@ header {
 }
 
 .head_menu .links {
+  display: -webkit-flex; 
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -183,6 +186,7 @@ header {
 .head_phones {
   flex: 1;
   text-align: center;
+  display: -webkit-flex; 
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -212,7 +216,7 @@ header {
 
 
 .main_sliderText{
-  max-height: 100%;
+  max-height: 100vh;
   height: 780px;
   width: 90%;
   position: relative;
@@ -221,16 +225,20 @@ header {
   color: #fff;
   margin-left: 5%;
   margin-right: 5%;
+  display: -webkit-flex; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   }
 
 .textOverSlide {
   position: relative;
   width: 100%;
-    
+   
 }
 .main_sliderText .row1{
-  position: absolute;
-  top: 30%;
+  position: relative;
+  /* margin-top: 10%; */
   left:10%;
   font-size: 28px;
   font-weight: 500;
@@ -238,8 +246,8 @@ header {
 }
 
 .main_sliderText .row2{
-  position: absolute;
-  top:45%;
+  position: relative;
+  margin-top: 20px;
   left:10%;
   font-size: 50px;
   text-transform: uppercase;
@@ -253,20 +261,39 @@ header {
 }
 
 .main_sliderText .row3{
-  position: absolute;
-  top: 60%;
+  position: relative;
+  margin-top: 20px;
   left:10%;
   font-size: 18px;
   max-width: 80%;
 }
 
 .main_sliderText .row4{
-  position: absolute;
-  top:70%;
+  position: relative;
+  margin-top: 20px;
   left:10%;
   font-size: 12px;
   max-width: 80%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -277,6 +304,7 @@ header {
   position: relative;
   text-align: center;
   vertical-align: middle;
+  display: -webkit-flex; 
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -308,6 +336,7 @@ header {
 }
 
 .main_about_items{
+  display: -webkit-flex; 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -351,6 +380,7 @@ header {
 /* БЛОК ГАЛЕРЕЯ */
 .gallery{
   margin: 10px 50px;
+  display: -webkit-flex; 
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -590,6 +620,7 @@ margin: 0 auto;
   background-color: #f7f8fa;
 }
 .main_prices .wrapper{
+  display: -webkit-flex; 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -610,6 +641,7 @@ margin: 0 auto;
 }
 
 .main_prices .wrapper .prices-row2{
+  display: -webkit-flex; 
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -620,6 +652,7 @@ margin: 0 auto;
 .main_prices .wrapper .prices-row2 .price-item {
   width: 20%;
   min-width: 270px;
+  display: -webkit-flex; 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -638,6 +671,7 @@ margin: 0 auto;
 
 
 .prices-row2 .price-item .row3{
+  display: -webkit-flex; 
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -725,6 +759,7 @@ font-weight: normal;
 /* Блок Немного нашего опыта */
 
 .main_expirience{
+  display: -webkit-flex; 
   display: flex;
   flex-direction: column;
   margin: 90px 0 60px 0;
@@ -745,7 +780,8 @@ font-weight: normal;
 .main_expirience .title-expirience{
   width: 100%;
   text-align: center;
-  margin-bottom: 50px;
+  max-width: 80%;
+  margin: 0px auto 50px auto;
 }
 
 
@@ -756,27 +792,36 @@ font-weight: normal;
   margin-top: 20px;
   margin-bottom: 10px;
   font-weight: normal;
+
   
 }
 .main_expirience .expirience-content{
+  display: -webkit-flex; 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
 .expirience-content .expirience-column{
+  display: -webkit-flex; 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  margin: 0 10px;
 }
 
+.expirience-content .exp-photo{
+  min-width: 90%;
+}
 .expirience-content .exp-photo img{
+  width: 100%;
   border-radius: 15%;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .expirience-content .exp-article {
+  display: -webkit-flex; 
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -830,8 +875,9 @@ margin: 16px 16px;
 		position: fixed;
 		z-index: 4;
 		left: 50%;
-		top: 150px;
-		width: 70%;
+		top: 50px;
+    width: 70%;
+    max-height: 100%;
     transform: translateX(-50%);
   }
 
@@ -878,7 +924,7 @@ margin: 16px 16px;
   }
 
   .overlay .popup .popup-form input {
-    width: 30%;
+    width: 40%;
     height: 56px;
     margin-top: 17px;
     font-size: 18px;
@@ -895,7 +941,7 @@ margin: 16px 16px;
    }
 
    .popup-form textarea {
-    width: 30%;
+    width: 40%;
     margin-top: 17px;
     font-size: 18px;
     border-radius: 25px;
@@ -968,6 +1014,10 @@ margin: 16px 16px;
 
 
 
+
+  
+
+
   /* offcanvas-menu */
 .offcanvas-menu{
   display: none;
@@ -975,15 +1025,16 @@ margin: 16px 16px;
   z-index: 9999;
   right: 0;
   transform: translateX(0);
-
-  width: 320px;
+  width: 25%;
+  min-width: 200px;
+  max-width: 320px;
   height: 100%;
   background-color: #1c202a;
   color: #fff;
   position: fixed;
   top: 0;
   overflow: inherit;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 
@@ -1064,6 +1115,7 @@ margin: 16px 16px;
 
 /* Footer */
 footer {
+  display: -webkit-flex; 
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -1083,13 +1135,14 @@ footer a{
 
 
 .big_foot .wrapper {
+  display: -webkit-flex; 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
 }
 
-.big_foot .wrapper .foot_item h3 {
+.big_foot .wrapper .foot_item h4 {
   font-size: 1.067em;
   font-weight: 400;
   font-style: normal;
@@ -1187,6 +1240,7 @@ footer a{
 }
 
 .small_foot .wrapper{
+  display: -webkit-flex; 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1263,6 +1317,10 @@ footer a{
   .main_prices .wrapper .prices-row2 .price-item {
     width: 30%;
     min-width: 350px;
+  }
+
+
+
 
 }
 
@@ -1360,8 +1418,89 @@ footer a{
   }
 
 
+/* 
+  main-slider text */
+
+ 
+  .main_sliderText .row2{
+    font-size: 40px;
+    line-height: 40px;
+  }
+ 
 
 
+/* MODAL */
+
+.overlay .popup .popup-form{
+  min-height: 100%;
+}
+
+.overlay .popup .popup-form input {
+  width: 60%;
+  margin-top: 10px;
+}
+
+.popup-form textarea {
+  width: 60%;
+  margin-top: 10px;
+}
+
+
+/* Main-about */
+
+.main_about .wrapper{
+  padding: 30px 0;
+}
+
+.main_about_items{
+flex-direction: column;
+}
+
+.main_about_header{
+  max-width: 85%;
+}
+
+.about_column{
+  margin: 0px 0px;
+}
+
+
+
+
+/* Отзывы */
+
+
+
+.main_review{
+  padding: 70px 0 0 0;
+}
+
+.main_review .right_about{
+  width: 85%;
+
+}
+
+
+/* Цены */
+.main_prices{
+  padding: 70px 0 20 0;
+
+}
+
+.main_prices .wrapper .prices-row2 .price-item{
+  min-width: 300px;
+}
+
+/* Немного нашего опыта */
+
+.main_expirience{
+  padding: 70px 0 30px 0;
+  margin: 0px;
+}
+
+.main_expirience .title-expirience{
+  margin: 0px auto 10px auto;
+}
 }
 
 
@@ -1388,9 +1527,43 @@ footer a{
 
 @media all and (max-width: 768px) {
   
+  /* MODAL */
+
+  .overlay .popup{
+    width: 90%;
+  }
+  
+  .main_expirience .expirience-content{
+flex-direction: column;
+  }
+
+  .big_foot .wrapper{
+    flex-direction: column;
+  }
+
+
 }
 
+
+
+
+
+
+
+
 @media all and (max-width: 576px) {
-  
+  .overlay .popup .popup-form input {
+    width: 90%;
+  }
+
+  .main_sliderText .row2{
+    font-size: 30px;
+    line-height: 30px;
+    margin-top: 15px;
+  }
+
+  .main_sliderText .row1, .main_sliderText .row3, .main_sliderText .row4{
+    margin-top: 15px;
+  }
 }
 

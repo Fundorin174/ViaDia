@@ -230,12 +230,24 @@ $('#menu_btn').click(function () {
   $('#offcanvas-menu').slideToggle("600");
 });
 
-
+// ЗАкрытие бокового мобильног меню при нажатии на крестик
 $('#offcanvasClose').click(function () {
   $('#offcanvas-menu').slideToggle("600");
 });
 
 
+
+
+// ЗАкрытие бокового мобильног меню при нажатии на ссылку
+let offcanvasMenuList = document.querySelector('.nav-menu'),
+offcanvasMenu = document.querySelector('#offcanvas-menu');
+offcanvasMenuList.addEventListener('click', (e) => {
+  let target = e.target;
+  if (target && target.classList.contains('menu-itema')) {
+    offcanvasMenu.style.display = 'none';
+     
+  }
+});
 
 
 
