@@ -34,8 +34,7 @@
               <a href="#">ВиА ДиА<br>свадьбы </a>
             </div>
             <div class="head_menu">
-              <div class="nav_button menu_btn" id="menu_btn">
-                <span></span>
+              <div id="menu_btn">
               </div>
               <ul class="links">
                 <li class="menu-item"><a href="#">Главная</a></li>
@@ -53,25 +52,25 @@
           </div>
         </div>
       </header>
-      <div id="resizeSlider">
+      <div id="resizeSlider" class="fade">
 
 
       </div>
     </section>
     <section class="main_sliderText">
-      <div class="textOverSlide row1">
+      <div class="textOverSlide row1 fade" id="viaName">
         <p>ВиА ДиА</p>
       </div>
-      <div class="textOverSlide row2">
+      <div class="textOverSlide row2 fade" id="viaProffession">
         <p>Ведущий и музыканты <br> на праздники</p>
       </div>
-      <div class="textOverSlide row3">
+      <div class="textOverSlide row3 fade" id="viaLove">
         <p>Которые любят свою работу</p>
       </div>
-      <div class="textOverSlide row4">
-        <form method="LINK" action="#main_contacts">
-          <input type="submit" value="Назначить встречу" id="footer-button">
-        </form>
+      <div class="textOverSlide row4" id="viaButton">
+        <div class = "description-btn fade">
+          Назначить встречу
+        </div>
 
       </div>
     </section>
@@ -215,8 +214,8 @@
             <div class = "item-row row2"> <img src="/img/main-prices/1.png" alt="Новый год"></div>
             <div class = "item-row row3"><p>от</p><h2>23000</h2><p>/руб</p></div>
             <div class = "item-row row4"><p>В стоимость входит программа на 4 часа, индивидуально-составленный сценарий, ведущий, певица, профессиональный диджей со всей необходимой аппаратурой и саксофоном.</p></div>
-            <div class = "item-row row5">
-              <a class="price-button" href="#openModal">Заказать</a>
+            <div class = "description-btn" id="btutton1">
+             Заказать
             </div>
           </div>
           <div class="price-item">
@@ -224,33 +223,66 @@
             <div class = "item-row row2"> <img src="/img/main-prices/2.png" alt="Корпоратив"></div>
             <div class = "item-row row3"><p>от</p><h2>23000</h2><p>/руб</p></div>
             <div class = "item-row row4"><p>В стоимость входит программа на 4 часа, индивидуально-составленный сценарий, ведущий, певица, профессиональный диджей со всей необходимой аппаратурой и саксофоном.</p></div>
-            <div class = "item-row row5">
-              <a class="price-button" href="#openModal">Заказать</a>
-            </div>
+            <div class = "description-btn">
+              Заказать
+             </div>
           </div>
           <div class="price-item">
             <div class = "item-row row1"><h3>Свадьба</h3></div>
             <div class = "item-row row2"> <img src="/img/main-prices/3.png" alt="Свадьба"></div>
             <div class = "item-row row3"><p>от</p><h2>23000</h2><p>/руб</p></div>
             <div class = "item-row row4"><p>В стоимость входит программа на 4 часа, индивидуально-составленный сценарий, ведущий, певица, профессиональный диджей со всей необходимой аппаратурой и саксофоном.</p></div>
-            <div class = "item-row row5">
-              <a class="price-button" href="#openModal">Заказать</a>
-            </div>
+            <div class = "description-btn">
+              Заказать
+             </div>
           </div>
           <div class="price-item">
             <div class = "item-row row1"><h3>Выпускной</h3></div>
             <div class = "item-row row2"> <img src="/img/main-prices/4.png" alt="Выпускной"></div>
             <div class = "item-row row3"><p>от</p><h2>23000</h2><p>/руб</p></div>
             <div class = "item-row row4"><p>В стоимость входит программа на 4 часа, индивидуально-составленный сценарий, ведущий, певица, профессиональный диджей со всей необходимой аппаратурой и саксофоном.</p></div>
-            <div class = "item-row row5">
-              <a class="price-button" href="#openModal">Заказать</a>
-            </div>
+            <div class = "description-btn">
+              Заказать
+             </div>
           </div>
         </div>
         <div class="prices-row3">
-          <form method="LINK" action="#main_contacts">
-            <input type="submit" value="Получить индивидуальную скидку" class="price-button">
-          </form>
+          <div class = "description-btn">
+            Получить индивидуальную скидку
+           </div>
+        </div>
+      </div>
+    </section>
+    <section class="main_expirience">
+      <div class="title-expirience">
+        <h2>Немного нашего опыта</h2>
+        <p>Несколько забавных сюжетов из жизни и работы на праздничных мероприятиях!</p>
+      </div> 
+      <div class="expirience-content">
+        <div class="expirience-column">
+          <hr>
+          <div class="exp-photo"><img src="/img/main-expirience/perloff.jpg" alt="Илья"> </div>
+          <hr>
+          <div class="exp-article">
+            <img src="/img/main-expirience/qoutes.png" alt="">
+            <p>Одним из главных критериев хорошей свадьбы является индивидуально-подобранная программа специально для молодоженов. Например, я работал на свадьбе у пары, которая была без ума от «тяжелого» рока. Естественно, многие гости были в теме и полностью разделяли вкусы молодых, но родственники были приверженцами более традиционных музыкальных стилей. Нами было принято решение заменить музыкальное сопровождение на струнный дуэт из скрипки и виолончели. Звучали любимые молодыми мелодии, но уже в классической обработке. Все были в восторге.</p>
+          </div>
+          <hr>
+          <div class="exp-photo"><img src="/img/main-expirience/anya.jpg" alt="Аня"> </div>
+        </div>
+        <div class="expirience-column">
+            <hr>
+          <div class="exp-article">
+            <img src="/img/main-expirience/qoutes.png" alt="">
+            <p>Иногда, креатив исходит от самих гостей. Был очень забавный момент, когда гости заранее связались со мной и попросили массово разыграть молодых. Были придуманы 7-9 танцевальных «Па» , которые добросовестные гости разучили и вот сразу после танца молодых гости по одному начинают выходить на танцпол и повторять заученные движения, через мгновение весь зал зажигательно и синхронно отплясывает, включая молодых. Нереальный восторг у всех участников и память на всю жизнь.</p>
+          </div>
+          <hr>
+          <div class="exp-photo"><img src="/img/main-expirience/dima.jpg" alt="Дима"> </div>
+          <hr>
+          <div class="exp-article">
+            <img src="/img/main-expirience/qoutes.png" alt="">
+            <p>Современные пары молодоженов не всегда готовы к тому, что бы на их празднике были старые добрые свадебные традиции. Всё чаще просят заменить чем-нибудь более свежим и креативным. Так на одной из свадеб вместо привычного каравая, молодых встречали икрой, вместо «Горько» за каждым столиком лежали таблички с надписью "KISS" и когда гости синхронно поднимали таблички-молодые радовали всех поцелуем. А привычный первый танец молодых начался под медленную композицию, но в середине заиграла рок-н-рольная мелодия и молодые поразили всех заранее поставленным танцем.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -291,9 +323,9 @@
                   <li><a href="tel:+7-950-755-2342">Тел: 8 (950)-755-2342</a></li>
                   <li><a href="mailto:senkevichi@rambler.ru"> E-mail: senkevichi@rambler.ru</a></li>
                 </ul>
-                <form method="LINK" action="#main_contacts">
-                  <input type="submit" value="Оставить заявку" id="footer-button">
-                </form>
+                <div class = "description-btn">
+                  Оставить заявку
+                 </div>
 
 
               </div>
@@ -311,6 +343,61 @@
   </div>
   <div class="scrollup" id="toTop">
     <p>&rsaquo;</p>
+  </div>
+    <div class="overlay fade">
+    <div class="popup">
+      <div class="popup-close">&times;
+      </div>
+      <div class="popup-title">
+        Форма обратной связи</div>
+      <div class="popup-form">
+        <form action="mail.php" method="POST" class="main_form">
+          <div class="form_1">
+
+            <div class="form_box">
+              <input id="name" type="text" name="user_name" placeholder="Как к Вам обращаться?">
+            </div>
+
+            <div class="form_box">
+              <input id="phone" type="tel" name="user_phone" required placeholder="Телефон">
+            </div>
+
+            <div class="form_box">
+              <input id="email" type="email" name="user_email" placeholder="E-mail (по желанию)">
+            </div>
+
+
+            <div class="history ">
+              <textarea name="user_message" id="history" cols="30" rows="10"
+                placeholder="Опишите Ваши пожелания..."></textarea>
+            </div>
+
+            <div class="button_box">
+              <input class="button" id="submit" type="submit" value="Отправить">
+            </div>
+
+
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="offcanvas-menu" id="offcanvas-menu">
+      <div class="popup-close" id="offcanvasClose">&times;
+      </div>
+      <div class="offcanvas-inner">
+        <div class="sp-module">
+          <div class="sp-module-content">
+            <ul class="nav-menu">
+                <li class="menu-item"><a href="#">Главная</a></li>
+                <li class="menu-item"><a href="#">О нас</a></li>
+                <li class="menu-item"><a href="#main_review">Отзывы</a></li>
+                <li class="menu-item"><a href="#">Фотоотчеты</a></li>
+                <li class="menu-item"><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
   </div>
   <script type="text/javascript" src="js/jquery/2.2.2.js"></script>
   <script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>

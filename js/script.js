@@ -1,5 +1,81 @@
 'use strict';
 window.addEventListener('DOMContentLoaded', function () {
+
+  // move main text
+
+  let viaDia = document.querySelector('#viaName'),
+  viaProffession = document.querySelector('#viaProffession'),
+  viaLove = document.querySelector('#viaLove'),
+  viaButton = document.querySelector('#viaButton');
+  
+  // move first row
+  function viaDiaMove(from, to) {
+    let current = from;
+  
+    setTimeout(function go() {
+      viaDia.style.cssText = `padding-top: ${current}px;`;
+      if (current < to) {
+        setTimeout(go, 15);
+      }
+      current++;
+    }, 15);
+  }
+
+    // move second row
+  function viaProffessionMove(from, to) {
+    let current = from;
+  
+    setTimeout(function go() {
+      viaProffession.style.cssText = `padding-left: ${current}px;`;
+      if (current > to) {
+        setTimeout(go, 15);
+      }
+      current--;
+    }, 15);
+  }
+
+    // move 3rd row
+  function viaLoveMove(from, to) {
+    let current = from;
+  
+    setTimeout(function go() {
+      viaLove.style.cssText = `padding-top: ${current}px;`;
+      if (current > to) {
+        setTimeout(go, 15);
+      }
+      current--;
+    }, 15);
+  }
+
+    // move button
+  function viaButtonMove(from, to) {
+    let current = from;
+  
+    setTimeout(function go() {
+      viaButton.style.cssText = `padding-top: ${current}px;`;
+      if (current > to) {
+        setTimeout(go, 15);
+      }
+      current--;
+    }, 15);
+  }
+
+  // использование:
+ viaDiaMove(1, 50);
+ viaProffessionMove(50, 0);
+ viaLoveMove(50, 0);
+ viaButtonMove (50, 0);
+
+  
+
+
+
+
+
+
+
+  
+  
   let scrollBottom = document.querySelector('.scrollup');
   // appearing Menu on Scroll
   window.addEventListener('scroll', backgroundMenu, false);
@@ -109,6 +185,65 @@ for (let i = 0; i < sliders.length + 1; i++) {
   }
 }
 });
+
+
+
+
+// Modal
+
+let overlay = document.querySelector('.overlay'),
+close = document.querySelector('.popup-close');
+// more = document.querySelector('#btutton1'),
+
+
+// По клику на узнать больше появляется модальное окно с анимацией
+// more.addEventListener('click', function() {
+// overlay.style.display = 'block';
+// document.body.style.overflow = 'hidden'; //запрет проктутки при открытом модальном окне
+// });
+
+
+
+
+// Открыть Модальное при нажатии на любую кнопку
+let info = document.querySelector('.body-wrapper');
+
+info.addEventListener('click', (e) => {
+  let target = e.target;
+  if (target && target.classList.contains('description-btn')) {
+    overlay.style.display = 'block';
+    document.body.style.overflow = 'hidden'; //запрет проктутки при открытом модальном окне
+  }
+});
+
+
+// Закрыть модальное окно, разблокировать прокрутку
+close.addEventListener('click', () => {
+overlay.style.display = 'none';
+document.body.style.overflow = '';
+});
+
+
+
+// Выезд бокового мобильног меню
+$('#menu_btn').click(function () {
+  $('#offcanvas-menu').slideToggle("600");
+});
+
+
+$('#offcanvasClose').click(function () {
+  $('#offcanvas-menu').slideToggle("600");
+});
+
+
+
+
+
+
+
+
+
+
 
 
 
