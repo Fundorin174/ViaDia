@@ -213,7 +213,7 @@ header {
 #resizeSlider {
   z-index: 0;
   max-height: 780px;
-  background: url(../img/DIA.jpg) center no-repeat;
+  background: url(../img/main-small576/DIA.jpg) center no-repeat;
   background-size: cover;
 }
 
@@ -634,7 +634,7 @@ margin: 0 auto;
   text-decoration: none;
     text-transform: none;
     letter-spacing: -0.35px;
-    font-size: 2.933rem;
+    font-size: 2.933em;
     line-height: 1.05;
 }
 
@@ -771,7 +771,7 @@ font-weight: normal;
   display: none;
 }
 
-.main_expirience, .second_expirience{
+.main_expirience{
   display: -webkit-flex; 
   display: flex;
   flex-direction: column;
@@ -908,8 +908,8 @@ margin: 16px 16px;
 
   .overlay .popup .popup-close {
     position: absolute;
-    right: -30px;
-    top: -40px;
+    right: 10px;
+    top: 10px;
     cursor: pointer;
     font-size: 35px;
     color: #fff;

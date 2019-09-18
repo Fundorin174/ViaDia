@@ -244,14 +244,18 @@ flex-direction: column;
   margin: 0px auto 10px auto;
 }
 
-.main_expirience .exp-photo{
-  display: none;
- 
-}
-
 .main_expirience {
   display: none;
 }
+
+.second_expirience {
+  /* display: -webkit-flex;  */
+  display: flex;
+  flex-direction: column;
+  margin: 90px 0 60px 0;
+}
+
+
 }
 
 
@@ -278,10 +282,94 @@ flex-direction: column;
 
 @media all and (max-width: 768px) {
   
+  .head_logo{
+display: none;
+  }
+  .menu-wrapper{
+    height: 50px;
+  }
+
+  #menu_btn{
+    top: 0px;
+  } 
+
+  .main_sliderText .row1{
+    font-size: 11px;
+  }
+
+  .main_sliderText .row2{
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.main_sliderText .row3{
+  font-size: 9px;
+  line-height: 13px;
+}
+
+.main_sliderText .description-btn{
+font-size: 6px;
+line-height: 8px;
+padding: 5px 10px;
+}
+
+.about_item{
+  margin: 20px 0 20px 0;
+}
+
+.main_review .next:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.main_review .prev:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.review-resume{
+  font-weight: normal;
+  max-width: 80%;
+}
+
+
+.main_prices .wrapper .prices-row1 {
+  font-size: 2.933em;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main_prices .wrapper .prices-row2 .price-item{
+  width: 400px;
+  margin: 30px auto 30px auto;
+
+}
+
+.big_foot .wrapper .foot_item h4{
+  margin-top: 20px;
+  padding-bottom: 0px;
+}
+
+.big_foot .wrapper .foot_item li{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.big_foot .wrapper .foot_item .description-btn {
+  margin-top: 15px;
+}
+
   /* MODAL */
 
   .overlay .popup{
     width: 90%;
+  }
+
+  .overlay .popup .popup-title{
+font-size: 14px;
+font-weight: normal;
+  }
+
+  .overlay .popup .popup-form{
+    padding: 35px 15px 50px 15px;
   }
   
   .main_expirience .expirience-content{
@@ -290,6 +378,23 @@ flex-direction: column;
 
   .big_foot .wrapper{
     flex-direction: column;
+  }
+
+
+
+  .overlay .popup .popup-form input, .overlay .popup .popup-form textarea {
+    height: 26px;
+    width: 80%;
+    font-size: 14px;
+
+  }
+
+  .overlay .popup .popup-form textarea{
+    height: 56px;
+  }
+  .overlay .popup .popup-form .button{
+    width: auto;
+    padding: 5px 15px;
   }
 
 
@@ -303,17 +408,54 @@ flex-direction: column;
 
 
 @media all and (max-width: 576px) {
-  .overlay .popup .popup-form input {
-    width: 90%;
+
+  .head_logo>a{
+    line-height: 14px;
+    font-size: 14px;
+  }
+
+  .main_sliderText .row1{
+    line-height: 7px;
+    font-size: 9px;
   }
 
   .main_sliderText .row2{
-    font-size: 30px;
-    line-height: 30px;
-    margin-top: 15px;
+    font-size: 21px;
+    line-height: 21px;
+    margin-top: 10px;
+  }
+  .main_sliderText .row3{
+    font-size: 7px;
+    line-height: 12px;
+
   }
 
   .main_sliderText .row1, .main_sliderText .row3, .main_sliderText .row4{
-    margin-top: 15px;
+    margin-top: 10px;
+  }
+
+  .overlay .popup .popup-form input, .overlay .popup .popup-form textarea {
+    width: 90%;
+  }
+
+  .gallery a{
+    width: 20%;
+    padding: 0;
+  }
+
+  .wrap .slider-item .slider-block img{
+    width: 100px;
+  }
+
+
+  .main_prices .wrapper .prices-row2 .price-item{
+    width: 90%;
+    max-width: 350px;
+    margin: 30px auto 30px auto;
+  
+  }
+
+  .expirience-content .exp-article img{
+    width: 20px;
   }
 }

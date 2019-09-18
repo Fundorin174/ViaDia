@@ -1,6 +1,8 @@
 'use strict';
 window.addEventListener('DOMContentLoaded', function () {
-
+  $('body,html').animate({
+    scrollTop: 0
+  }, 100);
   // move main text
 
   let viaDia = document.querySelector('#viaName'),
