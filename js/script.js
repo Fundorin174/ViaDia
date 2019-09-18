@@ -251,8 +251,20 @@ offcanvasMenuList.addEventListener('click', (e) => {
 
 
 
+// Изменение главного окна
+let resizeSlider = document.querySelector('#resizeSlider'),
+    mainSliderText = document.querySelector('.main_sliderText');
+  function resizeSliderHeigth(){
+    let resizeSliderWidth = resizeSlider.clientWidth;
+    if (resizeSliderWidth < 1200) {
+      resizeSlider.style.cssText = `max-height: ${resizeSliderWidth/1.52}px;`;
+      mainSliderText.style.cssText = `max-height: ${resizeSliderWidth/1.52}px;`;
+    }
+  }
+  resizeSliderHeigth();
 
 
+  window.addEventListener('resize', resizeSliderHeigth);
 
 
 

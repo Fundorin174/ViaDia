@@ -41,6 +41,8 @@ body {
   font-family: 'Noto Sans SC', sans-serif;
   margin: 0;
   color: #333;
+  font-size: 14px;
+  line-height: 1.42857143;
 }
 
 .h1, .h2, .h3, h1, h2, h3 {
@@ -211,12 +213,13 @@ header {
 #resizeSlider {
   z-index: 0;
   max-height: 780px;
-  height: 780px;
+  background: url(../img/DIA.jpg) center no-repeat;
+  background-size: cover;
 }
 
 
 .main_sliderText{
-  max-height: 100vh;
+  max-height: 780px;
   height: 780px;
   width: 90%;
   position: relative;
@@ -669,6 +672,12 @@ margin: 0 auto;
 .prices-row2 .price-item .row2{
   margin-bottom: 22px;}
 
+  .prices-row2 .price-item h3{
+    font-size: 20px;
+    color: #222327;
+    font-weight: normal;
+  }
+
 
 .prices-row2 .price-item .row3{
   display: -webkit-flex; 
@@ -758,14 +767,18 @@ font-weight: normal;
 
 /* Блок Немного нашего опыта */
 
-.main_expirience{
+.second_expirience {
+  display: none;
+}
+
+.main_expirience, .second_expirience{
   display: -webkit-flex; 
   display: flex;
   flex-direction: column;
   margin: 90px 0 60px 0;
 }
 
-.main_expirience hr{
+.main_expirience hr, .second_expirience hr{
   margin-bottom:40px;
   margin-top:40px;
   display: block;
@@ -777,29 +790,37 @@ font-weight: normal;
     width: 80%;
 }
 
-.main_expirience .title-expirience{
+.main_expirience .title-expirience, .second_expirience .title-expirience{
   width: 100%;
   text-align: center;
   max-width: 80%;
-  margin: 0px auto 50px auto;
+  margin: 0px auto 20px auto;
 }
 
 
-.main_expirience .title-expirience h2{
+.main_expirience .title-expirience h2 , .second_expirience .title-expirience h2{
   font-size: 34px;
   line-height: 1;
   color: rgba(34,35,39,1);
   margin-top: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   font-weight: normal;
 
   
 }
-.main_expirience .expirience-content{
+.main_expirience .expirience-content {
   display: -webkit-flex; 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.second_expirience .expirience-content{
+  display: -webkit-flex; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0 20px 0 20px;
 }
 
 .expirience-content .expirience-column{
@@ -832,6 +853,10 @@ width: 40px;
 margin: 16px 16px;
 }
 
+.expirience-content .exp-article p{
+  font-style: italic;
+  font-size: 16px;
+}
 
 
 
@@ -1133,6 +1158,9 @@ footer a{
   padding: 60px 0;
 }
 
+h4{
+  font-size: 18px;
+}
 
 .big_foot .wrapper {
   display: -webkit-flex; 
@@ -1302,268 +1330,4 @@ footer a{
 
 
 
-
-
-
-/* Adaptive */
-
-
-@media all and (max-width: 1200px) {
-  .main_prices .wrapper{
-    width: 90%;
-  }
- 
- 
-  .main_prices .wrapper .prices-row2 .price-item {
-    width: 30%;
-    min-width: 350px;
-  }
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media all and (max-width: 992px) {
-  
-
-  .head_menu .links, .head_phones{
-    display: none;
-  }
-  #menu_btn {
-    position: absolute;
-    display: block;
-    width: 50px;
-    height: 50px;
-    background: url(../img/gamburger.png) center center no-repeat;
-    background-size: cover;
-    top: 15px;
-    right: 15px;
-    margin-right: 20px;
-    z-index: 50;
-    transition: 0.5s;
-  }
-
-  #menu_btn:hover {
-    cursor: pointer;
-    background: url(../img/gamburgerHover.png) center center no-repeat;
-    background-size: cover;
-  }
-
-  /* Гамбургер на кнопке меню */
-  .menu_btn span,
-  .menu_btn span::before,
-  .menu_btn span::after {
-    display: block;
-    position: absolute;
-    top: 50%;
-    margin-top: -1px;
-    width: 20px;
-    height: 2px;
-    left: 50%;
-    margin-left: -10px;
-    background-color: #222;
-    z-index: 2;
-  }
-
-  .menu_btn span::before,
-  .menu_btn span::after {
-    content: '';
-    transition: 0.5s;
-  }
-
-  .menu_btn span::before {
-    transform: translateY(-5px);
-  }
-
-  .menu_btn span::after {
-    transform: translateY(5px);
-  }
-
-  .menu_btn_active span::before {
-    transform: rotate(35deg);
-    width: 10px;
-    transform-origin: left bottom;
-  }
-
-  .menu_btn_active span::after {
-    transform: rotate(-35deg);
-    width: 10px;
-    transform-origin: left top;
-
-  }
-
-
-/* 
-  main-slider text */
-
- 
-  .main_sliderText .row2{
-    font-size: 40px;
-    line-height: 40px;
-  }
- 
-
-
-/* MODAL */
-
-.overlay .popup .popup-form{
-  min-height: 100%;
-}
-
-.overlay .popup .popup-form input {
-  width: 60%;
-  margin-top: 10px;
-}
-
-.popup-form textarea {
-  width: 60%;
-  margin-top: 10px;
-}
-
-
-/* Main-about */
-
-.main_about .wrapper{
-  padding: 30px 0;
-}
-
-.main_about_items{
-flex-direction: column;
-}
-
-.main_about_header{
-  max-width: 85%;
-}
-
-.about_column{
-  margin: 0px 0px;
-}
-
-
-
-
-/* Отзывы */
-
-
-
-.main_review{
-  padding: 70px 0 0 0;
-}
-
-.main_review .right_about{
-  width: 85%;
-
-}
-
-
-/* Цены */
-.main_prices{
-  padding: 70px 0 20 0;
-
-}
-
-.main_prices .wrapper .prices-row2 .price-item{
-  min-width: 300px;
-}
-
-/* Немного нашего опыта */
-
-.main_expirience{
-  padding: 70px 0 30px 0;
-  margin: 0px;
-}
-
-.main_expirience .title-expirience{
-  margin: 0px auto 10px auto;
-}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media all and (max-width: 768px) {
-  
-  /* MODAL */
-
-  .overlay .popup{
-    width: 90%;
-  }
-  
-  .main_expirience .expirience-content{
-flex-direction: column;
-  }
-
-  .big_foot .wrapper{
-    flex-direction: column;
-  }
-
-
-}
-
-
-
-
-
-
-
-
-@media all and (max-width: 576px) {
-  .overlay .popup .popup-form input {
-    width: 90%;
-  }
-
-  .main_sliderText .row2{
-    font-size: 30px;
-    line-height: 30px;
-    margin-top: 15px;
-  }
-
-  .main_sliderText .row1, .main_sliderText .row3, .main_sliderText .row4{
-    margin-top: 15px;
-  }
-}
 

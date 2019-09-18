@@ -1,0 +1,319 @@
+
+/* Adaptive */
+
+
+@media all and (max-width: 1200px) {
+  .head_menu .links{
+    font-size: 9px;
+  }
+
+  .head_phones{
+    font-size: 14px;
+  }
+
+  .main_prices .wrapper{
+    width: 90%;
+  }
+ 
+ 
+  .main_prices .wrapper .prices-row2 .price-item {
+    width: 30%;
+    min-width: 350px;
+  }
+
+  .main_sliderText .row1{
+    font-size: 18px;
+  }
+
+  .main_sliderText .row2{
+    font-size: 42px;
+  }
+
+  .main_sliderText .row3{
+    font-size: 15px;
+  }
+
+  .description-btn{
+    font-size: 10px;
+    text-transform: uppercase;
+  }
+
+
+  .main_about_header h6, .title-expirience p{
+    font-size: 0.8em;
+  }
+
+  .main_about_header h2{
+    font-size: 2.2em;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (max-width: 992px) {
+  
+
+  .head_menu .links, .head_phones{
+    display: none;
+    font-size: 9px;
+  }
+  #menu_btn {
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../img/gamburger.png) center center no-repeat;
+    background-size: cover;
+    top: 15px;
+    right: 15px;
+    margin-right: 20px;
+    z-index: 50;
+    transition: 0.5s;
+  }
+
+  #menu_btn:hover {
+    cursor: pointer;
+    background: url(../img/gamburgerHover.png) center center no-repeat;
+    background-size: cover;
+  }
+
+  /* Гамбургер на кнопке меню */
+  .menu_btn span,
+  .menu_btn span::before,
+  .menu_btn span::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    width: 20px;
+    height: 2px;
+    left: 50%;
+    margin-left: -10px;
+    background-color: #222;
+    z-index: 2;
+  }
+
+  .menu_btn span::before,
+  .menu_btn span::after {
+    content: '';
+    transition: 0.5s;
+  }
+
+  .menu_btn span::before {
+    transform: translateY(-5px);
+  }
+
+  .menu_btn span::after {
+    transform: translateY(5px);
+  }
+
+  .menu_btn_active span::before {
+    transform: rotate(35deg);
+    width: 10px;
+    transform-origin: left bottom;
+  }
+
+  .menu_btn_active span::after {
+    transform: rotate(-35deg);
+    width: 10px;
+    transform-origin: left top;
+
+  }
+
+
+/* 
+  main-slider text */
+  .main_sliderText .row1{
+    font-size: 14px;
+  }
+ 
+  .main_sliderText .row2{
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .main_sliderText .row3{
+    font-size: 12px;
+  }
+ 
+
+
+/* MODAL */
+
+.overlay .popup .popup-form{
+  min-height: 100%;
+}
+
+.overlay .popup .popup-form input {
+  width: 60%;
+  margin-top: 10px;
+}
+
+.popup-form textarea {
+  width: 60%;
+  margin-top: 10px;
+}
+
+
+/* Main-about */
+
+.main_about .wrapper{
+  padding: 30px 0;
+}
+
+.main_about_items{
+flex-direction: column;
+}
+
+.main_about_header{
+  max-width: 85%;
+}
+
+.about_column{
+  margin: 0px 0px;
+}
+
+
+/* Mini-gallery */
+.gallery a {
+  width: 18%;
+  padding: 5px;
+}
+
+
+/* Отзывы */
+
+
+
+.main_review{
+  padding: 70px 0 0 0;
+}
+
+.main_review .right_about{
+  width: 85%;
+
+}
+
+.review-resume{
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Цены */
+.main_prices{
+  padding: 70px 0 20 0;
+
+}
+
+.main_prices .wrapper .prices-row2 .price-item{
+  min-width: 300px;
+}
+
+/* Немного нашего опыта */
+
+.main_expirience{
+  padding: 70px 0 30px 0;
+  margin: 0px;
+}
+
+.main_expirience .title-expirience{
+  margin: 0px auto 10px auto;
+}
+
+.main_expirience .exp-photo{
+  display: none;
+ 
+}
+
+.main_expirience {
+  display: none;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (max-width: 768px) {
+  
+  /* MODAL */
+
+  .overlay .popup{
+    width: 90%;
+  }
+  
+  .main_expirience .expirience-content{
+flex-direction: column;
+  }
+
+  .big_foot .wrapper{
+    flex-direction: column;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+@media all and (max-width: 576px) {
+  .overlay .popup .popup-form input {
+    width: 90%;
+  }
+
+  .main_sliderText .row2{
+    font-size: 30px;
+    line-height: 30px;
+    margin-top: 15px;
+  }
+
+  .main_sliderText .row1, .main_sliderText .row3, .main_sliderText .row4{
+    margin-top: 15px;
+  }
+}
