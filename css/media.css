@@ -144,6 +144,11 @@
   }
 
 
+  .scrolling {
+    background-color: rgba(24, 27, 36, .4);
+
+  }
+
 /* 
   main-slider text */
   .main_sliderText .row1{
@@ -285,12 +290,19 @@ flex-direction: column;
   .head_logo{
 display: none;
   }
+
+  .main-Menu-wrapper{
+    width: 100%;
+  }
   .menu-wrapper{
     height: 50px;
+    width: 100%;
   }
 
   #menu_btn{
-    top: 0px;
+      top: 0px;
+      right: 5px;
+      margin-right: 0px;
   } 
 
   .main_sliderText .row1{
