@@ -115,6 +115,7 @@ color: rgba(255,255,255,1);
   
   .contacts_info .fone, .main_mail, .icons_main{
     box-shadow: 0 14px 28px rgba(0,0,0,0.15), 0 10px 10px rgba(0,0,0,0.15);
+    height: 150px;
   }
   
   .contacts_info .fone_img {
@@ -149,10 +150,15 @@ color: rgba(255,255,255,1);
   .main_mail .email p {
     margin-right: 20px;
     margin-bottom: 0px;
+    margin-top: 30px;
   }
 
   .contacts_info .email a{
     color: #333;
+  }
+
+  .email img{
+    margin-top: 30px;
   }
   
   .contacts_info .fone,
