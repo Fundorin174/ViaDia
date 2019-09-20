@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  list-style: none;
+  color: #fff;
+  cursor: pointer;
+
+}
+
+body {
+  --super-dark-color: rgba(24, 27, 36, 1);
+  --dark-color: rgba(28, 32, 42, 1);
+  font-family: 'Noto Sans SC', sans-serif;
+  margin: 0;
+  color: #333;
+  font-size: 14px;
+  line-height: 1.42857143;
+}
+
+#header{
+color: rgba(255,255,255,1);
+}
+  
+
+.page-title-block{
+  position: relative;
+  width: 100%;
+  height: 320px;
+  background: url(../img/main-about-us-big.jpg) left center no-repeat;
+  background-size: cover;
+}
+
+.page-title{
+  padding: 145px 0 75px 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: 90%;
+}
+
+
+.page-title h2{
+  font-size: 40px;
+    font-weight: 500;
+    line-height: 1;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    color: rgba(255,255,255,1);
+}
+
+.page-title h2:after{
+  content: '';
+  background-color: #4285f4;
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 5%;
+    height: 5px;
+    border: none;
+    bottom: 0;
+    left: 0;
+    right: auto;
+    margin: auto;
+
+}
+
+#contacts-content{
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  }
+
+  .contacts-wrapper{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    padding-top: 60px;
+    padding-bottom: 120px;
+    margin: 0 auto;
+  }
+
+
+
+
+
+
+
+
+
+  .contacts_down {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    width: 100%;
+  }
+  
+  .contacts_info {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1.2em;
+  }
+  
+  .contacts_info .number {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .contacts_info .fone, .main_mail, .icons_main{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.15), 0 10px 10px rgba(0,0,0,0.15);
+  }
+  
+  .contacts_info .fone_img {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  
+  .fone_img img,
+  .email img {
+    width: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .contacts_info .email {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    
+  }
+  
+  .main_mail p {
+    margin-bottom: 20px;
+  }
+  
+  .main_mail .email p {
+    margin-right: 20px;
+    margin-bottom: 0px;
+  }
+
+  .contacts_info .email a{
+    color: #333;
+  }
+  
+  .contacts_info .fone,
+  .main_mail,
+  .icons_main {
+    text-align: center;
+   min-width: 70%;
+    max-width: 90%;
+    justify-content: space-between;
+    padding-top: 20px;
+    margin: 20px 0;
+  }
+  
+  a[href^="tel"] {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .contact_icons img {
+    width: 50px;
+  }
+  
+  
+  .contacts_info .icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .contacts_info .icons img {
+    margin: 20px 20px 20px 20px;
+  }
+  
+  .contacts_info .icons img:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.15), 0 10px 10px rgba(0,0,0,0.15);
+    border-radius: 50%;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* ФОРМА */
+  .main_form {
+    flex: 1;
+    min-width: 300px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 1.2em;
+  }
+  
+  .form_1 {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  
+  .form_box,
+  .history {
+    min-width: 70%;
+    max-width: 90%;
+    margin-top: 30px;
+  
+  }
+  
+  .form_box input {
+    width: 100%;
+    height: 30px;
+    padding-left: 20px;
+  }
+  
+  
+  textarea {
+    width: 100%;
+    padding-left: 20px;
+  }
+  
+  .button_box {
+    margin: 20px auto;
+    width: 150px;
+  }
+  
+  
+  .button_box .button {
+    height: 30px;
+    background-color: #4285f4;
+    color: #fff;
+    border-radius: 10px;
+    width: 100%;
+  
+  }
+  
+  .button_box .button:hover {
+    background-color: #4285f4;
+    color: #fff;
+    background-color: #062a5e;
+    transition: 0.5s;
+  }
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (max-width: 992px) {
+
+  .page-title-block{
+  background: url(../img/main-about-us.jpg) left top no-repeat;
+  background-size: cover;
+  }
+
+
+  .contacts-wrapper{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+}
