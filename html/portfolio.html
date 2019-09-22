@@ -15,16 +15,16 @@
     content="ВИА ДИА - ведущий и музыканты на любой тип мероприятия. Полное музыкальное оформление любого торжества. Свадьбы. Юбилеи. Корпоративные вечеринки. Профессионально. Качественно. Недорого. Женский вокал. Саксофон">
   <!-- <base href="d:\WebDev\openserver\OSPanel\domains\ВиА ДиА\"> -->
   <title>ВиА ДиА - Галерея</title>
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/css/media.css">
-  <link rel="stylesheet" href="/css/porfolio.css">
-  <link rel="stylesheet" href="/css/lightbox.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/media.css">
+  <link rel="stylesheet" href="../css/porfolio.css">
+  <link rel="stylesheet" href="../css/lightbox.min.css">
   <link
     href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:400,500,700|Open+Sans:400,600,800&display=swap&subset=cyrillic"
     rel="stylesheet">
-  <script type="text/javascript" src="js/jquery/2.2.2.js"></script>
-  <script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
-  <script type="text/javascript" src="js/portfolio.js"></script>
+  <script type="text/javascript" src="../js/jquery/2.2.2.js"></script>
+  <script type="text/javascript" src="../js/lightbox-plus-jquery.min.js"></script>
+  <script type="text/javascript" src="../js/portfolio.js"></script>
 
 <body class="body-wrapper">
   <header id="header" class="menu-fixed">
@@ -38,13 +38,13 @@
           </div>
           <ul class="links">
             <li class="menu-item"><a href="../index.html">Главная</a></li>
-            <li class="menu-item"><a href="/html/about.html">О нас</a></li>
-            <li class="menu-item"><a href="/html/portfolio.html">Фотоотчеты</a></li>
-            <li class="menu-item"><a href="/html/contacts.html">Контакты</a></li>
+            <li class="menu-item"><a href="../html/about.html">О нас</a></li>
+            <li class="menu-item"><a href="../html/portfolio.html">Фотоотчеты</a></li>
+            <li class="menu-item"><a href="../html/contacts.html">Контакты</a></li>
           </ul>
         </div>
         <div class="head_phones">
-          <img src="img/phone.png" alt="Phone">
+          <img src="../img/phone.png" alt="Phone">
           <a href="tel:+7-950-755-2342"> 8 (950)-755-2342</a>
         </div>
 
@@ -58,41 +58,51 @@
   </div>
   <section id="portfolio-content">
       <div class="portfolio-wrapper">
+      <div class="portfolio-photo">
         <div class="photoalbums">
           <div class="photoalbum">
             <a class="photohref" href="index_lightBox1.html" target="blank"><img src="../img/fotogallery1.jpg"
-                alt="Полнолуние"></a>
-            <p class="portfolio_title"><span><a href="index_lightBox1.html" target="blank">Полнолуние</a>
+                alt="Свадьбы" data-lightbox="porfolio-photo"></a>
+            <p class="portfolio_title"><span><a href="index_lightBox1.html" target="blank">Свадьбы</a>
               </span></p>
           </div>
           <div class="photoalbum">
             <a class="photohref" href="index_lightBox2.html" target="blank"><img src="../img/fotogallery2.jpg"
-                alt="Свадьба у океана"></a>
-            <p class="portfolio_title"><span> <a href="index_lightBox2.html" target="blank">Свадьба у
-                  океана</a></span></p>
+                alt="Новый год"  data-lightbox="porfolio-photo"></a>
+            <p class="portfolio_title"><span> <a href="index_lightBox2.html" target="blank">Новый год</a></span></p>
           </div>
           <div class="photoalbum">
             <a class="photohref" href="index_lightBox3.html" target="blank"><img src="../img/fotogallery3.jpg"
-                alt="Портретная съемка"></a>
-            <p class="portfolio_title"><span> <a href="index_lightBox3.html" target="blank">Портретная
-                  съемка</a></span></p>
+                alt="Выпускные"  data-lightbox="porfolio-photo"></a>
+            <p class="portfolio_title"><span> <a href="index_lightBox3.html" target="blank">Выпускные</a></span></p>
           </div>
           <div class="photoalbum">
             <a class="photohref" href="index_lightBox4.html" target="blank"><img src="../img/fotogallery4.jpg"
-                alt="Семейное и детское фото"></a>
-            <p class="portfolio_title"><span> <a href="index_lightBox4.html" target="blank">Семейное и
-                  детское фото</a></span></p>
-          </div>
-        </div>
-        <div class="videoalbums">
-          <div class="videoclip">
-            <video src="#" controls = 'controls'></video>
-          </div>
-          <div class="videoclip">
-            <video src="#" controls = 'controls'></video>
+                alt="Нас позвали"  data-lightbox="porfolio-photo"></a>
+            <p class="portfolio_title"><span> <a href="index_lightBox4.html" target="blank">Нас позвали</a></span></p>
           </div>
         </div>
 
+      </div>
+      <div class="portfolio-video">
+        <div class="portfolio-video-title">
+            <h2>Видео наших мероприятий</h2>
+        </div>
+        <div class="portfolio-video-block">
+          <div class="videoclip">
+            <img src="../video/1.png" alt="Видео1" data-src="../video/ВИА ДИА - Ведение.mp4">
+          </div>
+          <div class="videoclip">
+              <img src="../video/2.png" alt="Видео2" data-src="../video/Свадебный Воронеж. Оля и Саша. 16.08.2014г.mp4">
+          </div>
+          <div class="videoclip">
+              <img src="../video/3.png" alt="Видео3" data-src="../video/Женский вокал Анна Хохонина.mp4">
+          </div>
+          <div class="videoclip">
+              <img src="../video/4.png" alt="Видео4" data-src="../video/I feel good.mp4">
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -109,10 +119,10 @@
             <p>Ведущий и музыканты на любой формат праздника в Воронеже&nbsp;и&nbsp;области. <br>Свадьбы, выпускные,
               дни
               рождения, корпоративы и многое&nbsp;другое!</p>
-            <a href="https://vk.com/public37974309" target="blank"><img src="/img/vk.svg" alt="VK"></a>
+            <a href="https://vk.com/public37974309" target="blank"><img src="../img/vk.svg" alt="VK"></a>
             <a href="https://www.instagram.com/khokhonina_anna/p/Bq4rQXRH8qr/" target="blank"><img
-                src="/img/instagram.svg" alt="Instagram"></a>
-            <a href="https://voronezh.gorko.ru/album/3027291/25039765/" target="blank"><img src="/img/globe.svg"
+                src="../img/instagram.svg" alt="Instagram"></a>
+            <a href="https://voronezh.gorko.ru/album/3027291/25039765/" target="blank"><img src="../img/globe.svg"
                 alt="Горько ру"></a>
           </div>
         </div>
@@ -121,10 +131,10 @@
             <h4 class="module-title">Меню</h4>
             <div class="module-content">
               <ul>
-                <li><a href="/index.html">Главная</a></li>
+                <li><a href="../index.html">Главная</a></li>
                 <li><a href="#">Портфолио</a></li>
-                <li><a href="/about.html">О нас</a></li>
-                <li><a href="/contacts.html">Контакты</a></li>
+                <li><a href="../html/about.html">О нас</a></li>
+                <li><a href="../html/contacts.html">Контакты</a></li>
               </ul>
             </div>
           </div>
@@ -201,10 +211,10 @@
       <div class="sp-module">
         <div class="sp-module-content">
           <ul class="nav-menu">
-            <li class="menu-item"><a class="menu-itema" href="/index.html">Главная</a></li>
-            <li class="menu-item"><a class="menu-itema" href="/about.html">О нас</a></li>
+            <li class="menu-item"><a class="menu-itema" href="../index.html">Главная</a></li>
+            <li class="menu-item"><a class="menu-itema" href="../html/about.html">О нас</a></li>
             <li class="menu-item"><a class="menu-itema" href="#">Фотоотчеты</a></li>
-            <li class="menu-item"><a class="menu-itema" href="/contacts.html">Контакты</a></li>
+            <li class="menu-item"><a class="menu-itema" href="../html/contacts.html">Контакты</a></li>
           </ul>
         </div>
       </div>
