@@ -144,13 +144,7 @@ window.addEventListener('resize', squreBlocksPortfolio);
 
 let portfoliVideoBlock = document.querySelector('.portfolio-video-block');
    
-
-    
-
-
-
-
-    //Отслеживает клик по видео
+//Отслеживает клик по видео
 portfoliVideoBlock.addEventListener('click', (e) => {
   let target = e.target;
 
@@ -171,15 +165,16 @@ function createPlayer(videoItem) {
   // Создание элементов
 let videoClip = document.createElement('video'),
 player = document.createElement('div'),
-closeVideo = document.createElement('button');
+closeVideo = document.createElement('div'),
+closeImg = document.createElement('img');
 //Подключение стилей к элементам  
 player.classList.add('videoPlayer-block');
 videoClip.classList.add('play-video');
 closeVideo.classList.add('pop-up-btn');
-
+closeImg.classList.add('img-pop-up-btn');
 
 // Наполнение элементов содержимым
-closeVideo.textContent = 'Закрыть видео';
+closeImg.src = '../img/lightBox1/close.png';
 videoClip.src = `${videoItem.dataset.src}`;
 videoClip.setAttribute('autoplay', 'autoplay');
 videoClip.setAttribute('controls', 'controls');
@@ -188,6 +183,7 @@ videoClip.setAttribute('controls', 'controls');
 document.body.appendChild(player);
 player.appendChild(videoClip);
 player.appendChild(closeVideo);
+closeVideo.appendChild(closeImg);
 player.style.display = 'block';
 
 closeVideo.addEventListener('click', () => {
