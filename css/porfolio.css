@@ -130,6 +130,7 @@ border-radius: 5px;
   }
 
   .portfolio-video-title h2 {
+    position: relative;
       padding: 40px 0;
       font-weight: 600;
       margin-bottom: 20px;
@@ -138,6 +139,7 @@ border-radius: 5px;
   }
 
   .portfolio-video-block{
+    position: relative;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
