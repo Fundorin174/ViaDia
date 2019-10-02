@@ -102,7 +102,7 @@ $(document).ready(function ()
           "url"      : "url(../img/DIA2.jpg)",
           "size"     : "cover",
           "repeat"   : "no-repeat",
-          "position" : "center center"
+          "position" : "center top"
         },
         "portrait":
         {
@@ -145,7 +145,7 @@ $(document).ready(function ()
           "url"      : "url(../img/DIA4.jpg)",
           "size"     : "cover",
           "repeat"   : "no-repeat",
-          "position" : "center center"
+          "position" : "left center"
         }
       }
     }
