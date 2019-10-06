@@ -20,7 +20,7 @@ body {
   line-height: 1.42857143;
 }
 
-.page-title-block{
+.page-title-block {
   position: relative;
   width: 100%;
   height: 320px;
@@ -28,7 +28,7 @@ body {
   background-size: cover;
 }
 
-.page-title{
+.page-title {
   padding: 145px 0 75px 0;
   margin-right: auto;
   margin-left: auto;
@@ -36,179 +36,186 @@ body {
 }
 
 
-.page-title h2, .portfolio-video-title h2 {
+.page-title h2,
+.portfolio-video-title h2 {
   font-size: 40px;
-    font-weight: 500;
-    line-height: 1;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-    position: relative;
-    color: rgba(255,255,255,1);
+  font-weight: 500;
+  line-height: 1;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  color: rgba(255, 255, 255, 1);
 }
 
-.page-title h2:after{
+.page-title h2:after {
   content: '';
   background-color: #4285f4;
-    position: absolute;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 5%;
-    height: 5px;
-    border: none;
-    bottom: 0;
-    left: 0;
-    right: auto;
-    margin: auto;
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 5%;
+  height: 5px;
+  border: none;
+  bottom: 0;
+  left: 0;
+  right: auto;
+  margin: auto;
 
 }
 
-#portfolio-content{
+#portfolio-content {
   width: 100%;
   height: auto;
   margin: 0 auto;
   display: flex;
-background-color: #f7f8fa;
-  }
-
-  .portfolio-wrapper{
-    display: flex;
-    flex-direction: column;
-    width:100%;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .portfolio-photo, .portfolio-video-block{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    width: 100%;
-    padding: 0;
-    margin: 0 auto;
-  }
-
-  .photoalbums {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-
-  .photoalbum {
-    width: 45%;
-margin-top: 20px;
-text-align: center;
-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-border-radius: 5px;
-  }
-
-  .photoalbum:nth-child(odd), .videoclip:nth-child(odd) {
-      margin-right: 20px;
-  }
-
-
- .photohref, .photohref img {
-    width: 100%;
-    border-radius: 5px;
-  }
-
-  .photoalbum .portfolio_title {
-    position: relative;
-    top: -60%;
-    color: #fff;
-    font-weight: 800;
-    font-size: 1.4em;
-    font-style: italic;
-  }
-
-  .portfolio_title span {
-    background: rgba(0, 0, 0, 0.2);
-  }
-
-  .portfolio-video-title h2 {
-    position: relative;
-      padding: 40px 0;
-      font-weight: 600;
-      margin-bottom: 20px;
-      color: #333;
-      text-align: center;
-  }
-
-  .portfolio-video-block{
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-bottom: 60px;
-  }
-
-  .videoclip{
-    width: 45%;
-    margin-top: 20px;
-text-align: center;
-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-border-radius: 5px;
-cursor: pointer;
-  }
-
-   .videoclip img{
-    width: 100%;
-    border-radius: 5px;
-  }
-
-  .videoPlayer-block {
-    display: none;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    background-color: rgba(0,0,0,.9);
-    z-index: 100;
+  background-color: #f7f8fa;
+ tra;
 }
 
-.play-video{
+.portfolio-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio-photo,
+.portfolio-video-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.photoalbums {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.photoalbum {
+  width: 45%;
+  margin-top: 20px;
+  text-align: center;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  border-radius: 5px;
+}
+
+.photoalbum:nth-child(odd),
+.videoclip:nth-child(odd) {
+  margin-right: 20px;
+}
+
+
+.photohref,
+.photohref img {
   width: 100%;
   border-radius: 5px;
 }
 
-.pop-up-btn{
-    position: absolute;
-    right: 50%;
-    top: 0;
-    cursor: pointer;
-    font-size: 30px;
-    color: #fff;
-    font-weight: 300;
-    z-index: 100;
+.photoalbum .portfolio_title {
+  position: relative;
+  top: -60%;
+  color: #fff;
+  font-weight: 800;
+  font-size: 1.4em;
+  font-style: italic;
 }
 
-.img-pop-up-btn{
+.portfolio_title span {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-video-title h2 {
+  position: relative;
+  padding: 40px 0;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.portfolio-video-block {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.videoclip {
+  width: 45%;
+  margin-top: 20px;
+  text-align: center;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.videoclip img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.videoPlayer-block {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, .9);
+  z-index: 100;
+}
+
+.play-video {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.pop-up-btn {
+  position: absolute;
+  right: 50%;
+  top: 0;
+  cursor: pointer;
+  font-size: 30px;
+  color: #fff;
+  font-weight: 300;
+  z-index: 100;
+}
+
+.img-pop-up-btn {
   width: 100%;
 }
 
 
 
-  @media all and (max-width: 992px) {
+@media all and (max-width: 992px) {
 
-    .page-title-block{
+  .page-title-block {
     background: url(../img/main-about-us.jpg) left top no-repeat;
     background-size: cover;
-    }
-  
-  
-    .photoalbums, .portfolio-video-block{
-      display: flex;
-      flex-direction: column;
-    }
-
-    .photoalbums .photoalbum, .videoclip{
-      width: 90%;
-      margin: 20px 0px;
-    }
-  
   }
+
+
+  .photoalbums,
+  .portfolio-video-block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .photoalbums .photoalbum,
+  .videoclip {
+    width: 90%;
+    margin: 20px 0px;
+  }
+
+}
