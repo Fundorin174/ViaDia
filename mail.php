@@ -36,6 +36,6 @@ $mail->AltBody = '';
 if(!$mail->send()) {
     echo 'Ошибка отправки! Обратитесь в службу поддержки своего хостинга';
 } else {
-    header('location: thank-you.html');
+    header('location: /html/thank-you.html');
 }
 ?>
