@@ -1,7 +1,7 @@
 <?php
 // несколько получателей
-$to  = 'senkevichi@rambler.ru' . ', ';  // обратите внимание на запятую
-$to .= 'fundorin174@gmail.com';
+$to  = 'viadialog@yandex.ru';  // обратите внимание на запятую
+
 
 // тема письма
 $subject = 'Письмо с моего сайта';
@@ -17,7 +17,7 @@ $headers  = 'MIME-Version: 1.0' . "\r\n";
 $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n"; 
 
 // Дополнительные заголовки
-$headers .= 'To: Дмитрий <senkevichi@rambler.ru>' . "\r\n"; // Свое имя и email
+$headers .= 'To: ВиаДиа <viadialog@yandex.ru>' . "\r\n"; // Свое имя и email
 $headers .= 'From: '  . $_POST['name'] . '<' . $_POST['email'] . '>' . "\r\n";
 
 

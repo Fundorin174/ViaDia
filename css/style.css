@@ -841,12 +841,18 @@ font-weight: normal;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
+.second_expirience .expirience-content a{
+  margin: 0 auto;
+}
+
 .expirience-content .exp-article {
   display: -webkit-flex; 
   display: flex;
   flex-direction: row;
   align-items: flex-start;
 }
+
+
 
 .expirience-content .exp-article img{
 width: 40px;
